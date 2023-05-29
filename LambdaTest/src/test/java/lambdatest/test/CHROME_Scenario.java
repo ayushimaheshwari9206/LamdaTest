@@ -64,7 +64,7 @@ public class CHROME_Scenario {
 	public void myTest() {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		driver.get("https://lambdatest.com");
-		wait.until(ExpectedConditions.titleContains("Most Power"));
+		wait.until(ExpectedConditions.titleContains("Next-Generation Mobile Apps and Cross Browser Testing Cloud | LambdaTest"));
 		
 			WebElement allIntegrationsLink = driver.findElement(By.xpath("//h2[text()='Seamless Collaboration']"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", allIntegrationsLink);
